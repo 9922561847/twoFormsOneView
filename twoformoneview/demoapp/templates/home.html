@@ -1,0 +1,13 @@
+{% load crispy_forms_tags %}
+<head>
+    <title>demoapp</title>
+</head>
+<body>
+    <form action="{% url 'home' %}" id="profileForm" method="POST">
+        {% csrf_token %}
+        {%crispy form %}
+
+    </form>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</body>
